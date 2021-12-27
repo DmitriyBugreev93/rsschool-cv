@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rsschool</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav class="header__nav">
+                <a href="#">
+                    <img src="image/123.svg" alt="logo" class="logo__img">
+                </a>
+                <ul class="nav-ul">
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#example">Code example</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#languages">Language</a></li>
+                    <li><a href="#contacts">My contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="post">
+            <div class="post__text">
+                <h1>Bugreev Dmitriy</h1>
+                <h2>Junior Frontend Developer</h2>
+            </div>
+            <img src="image/photo_2021-12-23_15-52-43 1.png" alt="" class="post-img" >
+        </main>
+        <p id="about"></p>
+        
+        <div class="about">
+            <img src="image/1_HdBFQ9EO_Vc4-lHKShFbAQ 1.png" alt="" class="about-img">
+            <div class="about-text">
+                <h2>About me :</h2>
+                <p>Started studying programming at ProWeb courses in Uzbekistan. I began to independently study web
+                    design, and take an interest in additional tools related to front-end development. In the end, I
+                    enjoyed programming. At the moment, I am still studying at ProWeb, and at the same time I got a
+                    job as a junior front-end developer in a local company, and also started the “RSSchool” course
+                    for learning JavaScript. I try to develop my skills and knowledge.
+                </p>
+            </div>
+        </div>
+        <p id="skills"></p>
+        <div class="skills">
+            <div class="skills-text">
+                <h2>Skills :</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS (SCSS/SASS; Bootstrap)</li>
+                    <li>JavaScript</li>
+                    <li>Gulp</li>
+                    <li>Git/GitHub</li>
+                    <li>VSCode/Figma</li>
+                </ul>
+            </div>
+            <img src="image/hire-back-end-developer-indylogix-solutions 1.png" alt="">
+        </div>
+        <p id="example"></p>
+        <div class="example" >
+            <div class="example-text">
+                <h2>Code example :</h2>
+                <p>
+                    Using the <span>'for'</span> loop, we created random examples with the conclusion of a
+                    correct and incorrect solution.
+                </p>
+            </div>
+           <p class="code">
+               
+            let numberOfexamles = +prompt('Введите количество примеров'); <br>
+            let max = +prompt('Введите макс. число'); <br>
+            let min = +prompt('Введите мин. число'); <br>
+            function randNum(max, min) { <br>
+            let randomNum = Math.floor(Math.random() * (max + 1 - min)) + min; <br>
+            return randomNum; <br>
+            } <br>
+            for (let i = 0; i < numberOfexamles; i++) { <br>
+            let num1 = randNum(max, min); <br>
+            let num2 = randNum(max, min); <br>
+            var operators = [{sign: "+",method: function (a, b) { <br>
+            return a + b; <br>
+            } <br>
+            }, { <br>
+            sign: "-", <br>
+            method: function (a, b) { <br>
+            return a - b; <br>
+            } <br>
+            }, { <br>
+            sign: "*", <br>
+            method: function (a, b) { <br>
+            return a * b; <br>
+            } <br>
+            }, { <br>
+            sign: "/", <br>
+            method: function (a, b) { <br>
+            return a / b; <br>
+            } <br>
+            }]; <br>
+            var selectedOperator = Math.floor(Math.random() * operators.length); <br>
+            var ant = operators[selectedOperator].method(num1, num2); <br>
+            let total = prompt(num1 +  operators[selectedOperator].sign  + num2); <br>
+            if (total == ant){ <br>
+            alert('Ваш ответ верный ' + total + ' Правильный ответ: ' + ant); <br>
+            } else { <br>
+            alert('Ваш ответ не верный ' + total + ' Правильный ответ: ' + ant) <br>
+            } <br>
+            } <br id="education">
+
+        </p>
+        </div>
+        <div class="education" >
+            <img src="image/1_HdBFQ9EO_Vc4-lHKShFbAQ444.png" alt="">
+            <div class="education-text">
+                <h2>Education and courses :</h2>
+                <div class="education-text_list">
+                    <p>Mirzo-Ulugbek Professional College Information :</p>
+                    <ul>
+                        <li class="education_list">computer design and graphics</li>
+                    </ul>
+                    <p class="courses-text">Pro Web courses :</p>
+                    <ul>
+                        <li class="education_list">Html</li>
+                        <li class="education_list">Css (SASS/SCSS)</li>
+                        <li class="education_list">Bootstrap</li>
+                        <li class="education_list">JavaScript</li>
+                        <li class="education_list" id="languages">Git</li>
+                        <li class="education_list">PHP</li>
+                    </ul> 
+                </div>
+            </div>
+        </div>    
+        <section class="languages">
+            <h2>Languages :</h2>
+            <div class="languages-blocks">
+                <div class="block-left">
+                    <img src="image/flag1.png" alt="">
+                    <h3>Russian</h3>
+                    <p>-Native-</p>
+                </div>
+                <div class="block-center">
+                    <img src="image/flag2.png" alt="">
+                    <h3>English</h3>
+                    <p>-Primary-secondary-</p>
+                </div>
+                <div class="block-right">
+                    <img src="image/flag3.png" alt="">
+                    <h3>Deutsch</h3>
+                    <p>-B1-</p>
+                </div>
+            </div>
+        </section>
+        <footer class="contacts" id="contacts">
+            <a href="https://rs.school/js/">
+                <img src="image/rs_school_js 1.png" alt="logo-footer" class="rs">
+            </a>
+
+            <div class="contacts-blocks">
+                <div class="block-phone">
+                    <a href="tel:+998909089178">
+                        <img src="image/tel.png" alt="" class="block-img-all">
+                        <h3 class="block-title">Phone</h3>
+                        <span class="block-txt">+998-90-908-91-78</span>
+                    </a>
+                </div>
+                <div class="block-git">
+                    <a href="https://github.com/DmitriyBugreev93">
+                        <img src="image/git.png" alt="" class="block-img-all">
+                        <h3 class="block-title">GitHub</h3>
+                        <span class="block-txt">DmitriyBugreev93</span>
+                    </a>
+                </div>
+                <div class="block-discord">
+                    <a href="DmitriyB#8492">
+                        <img src="image/discord.png" alt="" class="block-img-all">
+                        <h3 class="block-title">Discord</h3>
+                        <span class="block-txt">DmitriyB#8492</span>
+                    </a>
+                </div>
+                <div class="block-mail">
+                    <a href="mailto:dmitriy.darya@gmail.com">
+                        <img src="image/email.png" alt="" class="block-img-all">
+                        <h3 class="block-title">E-mail</h3>
+                        <span class="block-txt">dmitriy.darya@gmail.com</span>
+                    </a>
+                </div>
+            </div>
+            <span class="year">2021</span>
+        </footer>
+
+    </div>
+</body>
+
+</html>
